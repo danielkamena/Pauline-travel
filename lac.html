@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lac Kivu</title>
+  <style>
+    /* Style général */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e8f4f8;
+      color: #333;
+    }
+
+    /* En-tête avec image de fond */
+    header {
+      background-image: url('https://photos.radiookapi.net/picture/20210420100816158239-Bukavu.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 3.5em;
+      text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.5em;
+      margin-top: 10px;
+      font-weight: 400;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 10px;
+      border-radius: 5px;
+      display: inline-block;
+    }
+
+    /* Section principale */
+    .main-content {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+    }
+
+    .main-content h2 {
+      color: #2c3e50;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .main-content p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      color: #555;
+      text-align: justify;
+    }
+
+    /* Galerie d'images */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Bouton retour */
+    .btn-retour {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 15px 30px;
+      background-color: #2ecc71;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1.2em;
+      transition: background-color 0.3s;
+      text-align: center;
+    }
+
+    .btn-retour:hover {
+      background-color: #27ae60;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 1024px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      header h1 {
+        font-size: 2.5em;
+      }
+
+      header p {
+        font-size: 1.2em;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- En-tête -->
+  <header>
+    <h1>Lac Kivu</h1>
+    <p>Un trésor naturel partagé entre la République Démocratique du Congo et le Rwanda</p>
+  </header>
+
+  <!-- Contenu principal -->
+  <div class="main-content">
+    <h2>À propos du Lac Kivu</h2>
+    <p>Le Lac Kivu est un des plus grands lacs d'Afrique centrale, situé entre la République Démocratique du Congo (RDC) et le Rwanda. Ce lac est entouré de montagnes verdoyantes et offre un paysage spectaculaire. Le lac est non seulement une merveille naturelle mais aussi un élément clé de la vie des populations locales qui en dépendent pour leur subsistance, la pêche, l'agriculture, et même le tourisme.</p>
+    
+    
+    <!-- Galerie d'images -->
+    <div class="gallery">
+      <img src="https://voyage.tv5monde.com/sites/default/files/3-gisenyi-kivu-fllickr-cc.jpg" alt="Lac Kivu - Vue sur Gisenyi">
+      <img src="https://www.afriquesurmesure.com/app/uploads/2024/02/serena4.jpeg" alt="Plage du Lac Kivu">
+      <img src="https://visit.virunga.org/wp-content/uploads/2020/08/Tchegera.jpg" alt="Lac Kivu avec montagnes">
+    </div>
+    <p>Il est également un site touristique majeur, offrant aux visiteurs la possibilité de faire du kayak, du pédalo, de la randonnée sur les rives et d’explorer les villages pittoresques autour du lac.</p>
+
+
+    <!-- Bouton retour -->
+    <a href="index.html" class="btn-retour">← Retour à l'accueil</a>
+  </div>
+
+</body>
+</html>

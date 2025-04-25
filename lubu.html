@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Découvrir Lubumbashi</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #f0e6d2, #fff8ee);
+      font-family: 'Playfair Display', serif;
+      color: #4e3b31;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 40px 20px;
+      text-shadow: 2px 2px 3px black;
+      font-size: 3em;
+      margin-top: 0;
+      color: #ffffff;
+      background: url('https://images.pexels.com/photos/7101649/pexels-photo-7101649.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')center/cover no-repeat;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      padding: 20px 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+      border: 1px solid #e4d5c1;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      margin: 0 0 10px;
+      color: #a87030;
+      font-size: 1.5em;
+    }
+
+    .card-content p {
+      font-size: 1em;
+      color: #6c584c;
+    }
+    .btn-retour {
+      display: inline-block;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 10px;
+      padding: 12px 25px;
+      background-color: #9b5f43;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn-retour:hover {
+      background-color: #1e7e34;
+    }
+    /* 📱 Responsive pour écran de 380px ou moins */
+@media (max-width: 380px) {
+  h1 {
+    font-size: 2em;
+    padding: 20px 10px;
+  }
+
+  .container {
+    padding: 15px 10px;
+    gap: 15px;
+    grid-template-columns: 1fr;
+  }
+
+  .card-content {
+    padding: 15px;
+  }
+
+  .card-content h3 {
+    font-size: 1.2em;
+  }
+
+  .card-content p {
+    font-size: 0.9em;
+  }
+
+  .card img {
+    height: 150px;
+  }
+}
+/* 📱 Super compact pour écran de 254px ou moins */
+@media (max-width: 254px) {
+  h1 {
+    font-size: 1.1em;
+    padding: 5px 3px;
+  }
+
+  .container {
+    padding: 3px;
+    gap: 4px;
+  }
+
+  .card-content {
+    padding: 4px;
+  }
+
+  .card-content h3 {
+    font-size: 0.85em;
+  }
+
+  .card-content p {
+    font-size: 0.6em;
+  }
+
+  .card img {
+    height: 90px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <h1>Les lieux emblématiques de Lubumbashi</h1>
+
+  <div class="container">
+
+    <div class="card">
+      <img src="https://www.snccsa.com/wp-content/uploads/2020/09/Batiment-de-la-Gare-de-Lubumbashi-scaled.jpg" alt="Gare de Lubumbashi">
+      <div class="card-content">
+        <h3>Gare Centrale</h3>
+        <p>Un bâtiment colonial emblématique au cœur de la ville, symbole du passé industriel de la région.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://chine365.fr/images/1000x650/pekin-musee-art-national.jpg" alt="Musée National">
+      <div class="card-content">
+        <h3>Musée National</h3>
+        <p>Un espace riche en artefacts et objets culturels racontant l’histoire du Katanga et du Congo.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://static.dw.com/image/67686832_605.jpg" alt="Cathédrale St Pierre et Paul">
+      <div class="card-content">
+        <h3>Cathédrale Saint-Pierre et Paul</h3>
+        <p>Un édifice majestueux avec une architecture impressionnante, centre spirituel de la ville.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/650104896.jpg?k=b67af9fc7153ec33b2ac2097e07e9c5daf2889f063c495c3459b0dbeeeae8513&o=&hp=1" alt="Golf Karavia">
+      <div class="card-content">
+        <h3>Golf Karavia</h3>
+        <p>Un hôtel et centre de loisirs de luxe avec vue sur le lac Kipopo, très prisé des visiteurs.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://7sur7.cd/sites/default/files/styles/article_2022/public/2023-09/WhatsApp%20Image%202023-09-27%20%C3%A0%2017.09.45.jpg?itok=p5U377qq" alt="place de la poste">
+      <div class="card-content">
+        <h3>Place de la poste</h3>
+        <p>Une place historique, souvent animée, avec des bâtiments coloniaux autour.</p>
+      </div>
+    </div>
+    
+
+  </div>
+  <a class="btn-retour" href="index.html">← Retour à l'accueil</a>
+
+</body>
+</html>

@@ -1,0 +1,273 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #d83535, #11110f, #6adbfd);
+    overflow-x: hidden;
+    overflow-y: auto;
+  
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+nav{
+    display:flex ;
+    background-color: rgb(11, 114, 231);
+    height: 55px;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid rgb(255, 239, 13);
+}
+nav b{
+    background-color: rgb(255, 224, 47);
+    color: red;
+    
+    
+  }
+  nav span{
+    color: #ffe711;
+    background: #f10707;
+  }
+
+ nav a{
+    text-decoration: none;
+    color: azure;
+    
+    padding: 0 5px;
+    transition: 0,5;
+    font-weight: bold;
+
+}
+ nav a:hover{
+    background-color: rgb(255, 218, 9);
+    color: black;
+}
+
+.menu{
+    display: none;
+}
+
+.disparution{
+    display: flex;
+}
+.btn2{
+    display: none;
+    flex-direction: column;
+    height: 70px;
+    justify-content: space-between;
+}
+.btn2 a{
+    text-decoration: none;
+    color: #000000;
+    background-color: rgb(143, 208, 224);
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+  
+  
+  h4{
+    text-align: center;
+    margin-top: 10px;
+    color: #ffffff;
+    text-shadow: 2px 2px 3px black;
+    text-transform: uppercase;
+  }
+
+  button{
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: rgb(255, 0, 0);
+    margin-top: 10px;
+    cursor: pointer;
+}
+  button a{
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 20px;
+   font-weight: bold;
+   text-shadow: 2px 2px 3px black;
+}
+  button:hover{
+   background-color: rgb(0, 17, 255);
+   transition: 0.3s;
+
+}
+  
+  .hero {
+    background: url('img c/congo1.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: transparent;
+    -webkit-text-stroke: 1px #0e0d0d;
+   
+    background: url('https://img.freepik.com/photos-premium/drapeau-republique-democratique-du-congo-fond-texture-collage-conceptuel_610882-11560.jpg');
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: animate 3s linear 3s infinite alternate;
+}
+  @keyframes animate{
+    100%{
+        background-position: -500px 0;
+    }
+}
+
+  
+  .hero p {
+    font-size: 1.25rem;
+    text-shadow: 2px 2px 3px black;
+  }
+  
+  section {
+    padding: 2rem 1rem;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #ffe819;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 3px black;
+  }
+  .carousel{
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+  
+    
+    
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .carousel h3 {
+    text-align: center;
+    margin-top: 0.5rem;
+    color: #ffffff;
+    font-size: 1.1rem;
+    text-shadow: 2px 2px 3px black;
+  }
+  
+  /* Slick arrow customization */
+  .slick-prev:before,
+  .slick-next:before {
+    color: #004d40;
+    font-size: 30px;
+  }
+  #infos button {
+    display: flex;
+    text-align: center;
+  }
+  /* Style pour le bouton */
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 15px 30px;
+  background-color: #fd8a8a;
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #287ddf;
+  transform: scale(1.05);
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+  
+ 
+  /* Pied de page */
+  footer {
+    background-color: #fa1010;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  footer p{
+    text-shadow: 2px 2px 3px black;
+  }
+  
+  .socials {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .socials a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    color: aliceblue;
+    
+  }
+  
+  ul li {
+    margin: 10px 0;
+  }
+  @media(max-width: 1008px){
+    .menu{
+    display:block
+    }
+    nav a{
+        
+        background-color: rgb(0, 38, 255);
+        color: rgb(226, 230, 226);
+    }
+    .btn2 a:hover{
+        background-color: rgb(255, 255, 255);
+    }
+    .btn{
+        display: none;
+    }
+    
+    .disparution{
+        display: flex;
+    }
+}
+@media(max-width: 320px){
+    .hero h1{
+        font-size: 20px;
+    }
+}
+    
+  

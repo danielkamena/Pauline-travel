@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Votre fichier CSS -->
+</head>
+<body>
+    <style>
+        /* Style global */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072821_960_720.jpg') center/cover;
+    margin: 0;
+    padding: 0;
+    color: #030303;
+}
+
+/* En-tête */
+header {
+    background-color: #2980b9;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 3px black;
+}
+
+/* Section du formulaire de contact */
+#contact-form {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.712);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#contact-form h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 3px black;
+}
+#contact-form label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    color: #2980b9; /* Couleur bleu */
+}
+
+
+#contact-form p {
+    font-size: 1.1em;
+    color: #555;
+    text-align: center;
+}
+
+/* Style des champs de formulaire */
+#contact-form div {
+    margin-bottom: 20px;
+}
+
+#contact-form label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+    box-sizing: border-box;
+}
+
+#contact-form input:focus, #contact-form textarea:focus {
+    border-color: #2980b9;
+    outline: none;
+}
+
+/* Style du bouton */
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1e6d8c;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+#contact-form p{
+    color: black;
+}
+/* Bouton retour */
+.btn-retour {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 15px 30px;
+      background-color: #e40e0e;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1.2em;
+      transition: background-color 0.3s;
+      text-align: center;
+    }
+
+    .btn-retour:hover {
+      background-color: #27ae60;
+    }
+
+/* Footer */
+footer {
+    background-color: #2980b9;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    #contact-form {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    #contact-form h2 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 350px) {
+    header h1 {
+        font-size: 1.6em;
+    }
+
+    #contact-form h2 {
+        font-size: 1.5em;
+    }
+
+    #contact-form input, #contact-form textarea {
+        font-size: 0.9em;
+    }
+
+    button {
+        font-size: 1em;
+    }
+}
+
+    </style>
+    <header>
+        <h1>Contactez-nous</h1>
+    </header>
+
+    <section id="contact-form">
+        <h2>Nous contacter</h2>
+        <p>Veuillez remplir ce formulaire et nous vous répondrons dans les plus brefs délais.</p>
+
+        <!-- Formulaire de contact -->
+        <form action="https://formspree.io/f/xldgzjeg" method="POST" id="contactForm">
+            <div>
+                <label for="name">Votre Nom</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Votre E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Votre Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div>
+                <button type="submit">Envoyer</button>
+            </div>
+        </form>
+    </section>
+    <!-- Bouton retour -->
+    <a href="index.html" class="btn-retour">←Retour à l'accueil</a>
+
+    <footer>
+        <p>&copy; 2025 Pauline travel</p>
+    </footer>
+</body>
+</html>

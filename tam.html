@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tambours du Congo</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f3f3f3;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1e272e;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8em;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .container h2 {
+      color: #e67e22;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .container p {
+      font-size: 1.1em;
+      line-height: 1.7;
+      text-align: justify;
+      color: #2c3e50;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .gallery img {
+      max-width: 100%;
+      width: 300px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    }
+    .btn-retour {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 12px 25px;
+      background-color: #28a745;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn-retour:hover {
+      background-color: #1e7e34;
+    }
+    @media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 1.5em;
+    padding: 15px;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .container h2 {
+    font-size: 1.8em;
+  }
+
+  .container p {
+    font-size: 1em;
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery img {
+    max-height: 250px;
+    object-fit: cover;
+  }
+
+  .btn-retour {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1em;
+  }
+}
+
+    
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Les Tambours du Congo</h1>
+  </header>
+
+  <div class="container">
+    <h2>Le cœur battant des traditions congolaises</h2>
+
+    <p>
+      En République Démocratique du Congo, les tambours ne sont pas de simples instruments de musique. Ils sont le cœur vibrant de la culture, des rituels, des danses et des cérémonies. Qu’ils soient utilisés lors des fêtes traditionnelles, des mariages ou des rites spirituels, les tambours transmettent des messages, rassemblent les communautés et font vivre l’héritage culturel du pays.
+    </p>
+
+    <p>
+      Les tambours congolais varient selon les régions : certains sont sculptés dans un bois massif, d’autres sont recouverts de peau d’animaux et décorés de symboles tribaux. Les sons produits sont uniques, puissants et expressifs. Autrefois, certains tambours servaient même à communiquer entre villages dans ce que l’on appelait les "tambours parleurs".
+    </p>
+
+    <p>
+      Aujourd’hui encore, ces instruments ancestraux continuent de rythmer la vie quotidienne et les scènes artistiques, affirmant leur place dans la musique moderne comme dans les traditions vivantes.
+    </p>
+
+    <div class="gallery">
+      <img src="https://djoliba.com/13182-home_default/djembe-roots-percussions-62-cm.jpg" alt="Percussionnistes en action">
+      <img src="https://guadeloupe-culture-pci.fr/wp-content/uploads/2022/01/ka.jpg" alt="Fabrication artisanale de tambour">
+      <img src="https://cdn.modernghana.com/album/770/420/322338209__k52rjv7ihc_p1060325.jpg" alt="Tambours utilisés lors des fêtes">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcykAQakPHsqzAq29Ku_wuOpKXdfFJV71o9g&s" alt="Tambour-parleur traditionnel">
+    </div>
+    <a class="btn-retour" href="index.html">← Retour à l'accueil</a>
+  </div>
+
+  
+</body>
+</html>

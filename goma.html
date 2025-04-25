@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>pauline travel</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 40px 20px 20px;
+      font-size: 2.8em;
+      color: #ff8800;
+      text-shadow: 1px 1px 3px #000;
+      background: url('https://cdn.pixabay.com/photo/2016/11/29/05/02/ashes-1867440_1280.jpg')no-repeat center center/cover;
+    margin-top: 0;
+    }
+
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: #1e1e1e;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 4px solid #ff5733;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      margin: 0 0 10px;
+      color: #66ffcc;
+      font-size: 1.4em;
+    }
+
+    .card-content p {
+      font-size: 0.95em;
+      color: #ddd;
+      line-height: 1.5em;
+    }
+    .btn-retour {
+      display: inline-block;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 10px;
+      padding: 12px 25px;
+      background-color: #c4750d;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn-retour:hover {
+      background-color: #1e7e34;
+    }
+    /* 🔁 Responsive ultra-petit écran (moins de 324px) */
+@media (max-width: 324px) {
+  h1 {
+    font-size: 1.6em;
+    padding: 20px 10px;
+  }
+
+  .container {
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .card-content {
+    padding: 15px;
+  }
+
+  .card-content h3 {
+    font-size: 1.1em;
+  }
+
+  .card-content p {
+    font-size: 0.85em;
+  }
+
+  .card img {
+    height: 160px;
+  }
+}
+/* 🔁 Responsive ultra-petit écran (310px et moins) */
+@media (max-width: 310px) {
+  h1 {
+    font-size: 1.4em;
+    padding: 15px 8px;
+  }
+
+  .container {
+    padding: 8px;
+    gap: 12px;
+  }
+
+  .card-content {
+    padding: 12px;
+  }
+
+  .card-content h3 {
+    font-size: 1em;
+  }
+
+  .card-content p {
+    font-size: 0.8em;
+  }
+
+  .card img {
+    height: 140px;
+  }
+}
+/* 📱 Responsive spécial pour écran de 305px ou moins */
+@media (max-width: 305px) {
+  h1 {
+    font-size: 1.2em;
+    padding: 12px 6px;
+  }
+
+  .container {
+    padding: 6px;
+    gap: 10px;
+  }
+
+  .card-content {
+    padding: 10px;
+  }
+
+  .card-content h3 {
+    font-size: 0.95em;
+  }
+
+  .card-content p {
+    font-size: 0.75em;
+  }
+
+  .card img {
+    height: 130px;
+  }
+}
+/* 📱 Responsive ultime pour écran de 300px ou moins */
+@media (max-width: 300px) {
+  body{
+    overflow-x: hidden;
+  }
+  h1 {
+    font-size: 1.1em;
+    padding: 10px 5px;
+  }
+
+  .container {
+    padding: 5px;
+    gap: 8px;
+  }
+
+  .card-content {
+    padding: 8px;
+  }
+
+  .card-content h3 {
+    font-size: 0.9em;
+  }
+
+  .card-content p {
+    font-size: 0.7em;
+  }
+
+  .card img {
+    height: 120px;
+  }
+}
+/* 📱 Ultra-responsive pour écran de 290px ou moins */
+@media (max-width: 290px) {
+  h1 {
+    font-size: 1em;
+    padding: 8px 4px;
+  }
+
+  .container {
+    padding: 4px;
+    gap: 6px;
+  }
+
+  .card-content {
+    padding: 6px;
+  }
+
+  .card-content h3 {
+    font-size: 0.85em;
+  }
+
+  .card-content p {
+    font-size: 0.65em;
+  }
+
+  .card img {
+    height: 110px;
+  }
+  .card{
+    margin-right: 20px;
+  }
+}
+/* 📱 Hyper responsive pour 280px ou moins */
+@media (max-width: 280px) {
+  h1 {
+    font-size: 0.95em;
+    padding: 6px 3px;
+  }
+
+  .container {
+    padding: 3px;
+    gap: 5px;
+  }
+
+  .card-content {
+    padding: 5px;
+  }
+
+  .card-content h3 {
+    font-size: 0.8em;
+  }
+
+  .card-content p {
+    font-size: 0.6em;
+  }
+
+  .card img {
+    height: 100px;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+
+  <h1>Les merveilles naturelles de Goma</h1>
+
+  <div class="container">
+
+    <div class="card">
+      <img src="https://www.mediacongo.net/cache/volcan_nyiragongo_21_0_jpg_711_473_1.jpeg" alt="Volcan Nyiragongo">
+      <div class="card-content">
+        <h3>Volcan Nyiragongo</h3>
+        <p>Explorez l’un des volcans les plus fascinants de la planète, avec son lac de lave spectaculaire.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Lac_Kivu-Fronti%C3%A8re_entre_le_Rwanda_et_la_RDC.jpg" alt="Lac Kivu">
+      <div class="card-content">
+        <h3>Lac Kivu</h3>
+        <p>Un lieu de détente absolue entre plage, montagne et coucher de soleil sur l’eau.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://zenithsteel.com/wp-content/uploads/2021/02/Goma-church-zenith-steel.jpg" alt="Cathédrale Saint-Esprit">
+      <div class="card-content">
+        <h3>Cathédrale Saint-Esprit</h3>
+        <p>Un monument spirituel emblématique avec une architecture remarquable au cœur de Goma.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://static.nationalgeographic.fr/files/styles/image_3200/public/virunganov_067.jpg?w=1600&h=1022" alt="Parc des Virunga">
+      <div class="card-content">
+        <h3>Parc des Virunga</h3>
+        <p>Un site UNESCO avec des gorilles des montagnes, des paysages volcaniques et des aventures inoubliables.</p>
+      </div>
+    </div>
+
+  </div>
+  <a class="btn-retour" href="index.html">← Retour à l'accueil</a>
+
+</body>
+</html>

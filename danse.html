@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Danse Traditionnelle de la RDC</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #111;
+      color: white;
+    }
+
+    header {
+      background: url('https://img.freepik.com/photos-gratuite/amis-habilles-pour-carnaval-nuit_23-2148825071.jpg?semt=ais_hybrid&w=740') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    header h1 {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      font-size: 2.8em;
+      border-radius: 10px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .btn-retour {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 12px 25px;
+      background-color: #28a745;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn-retour:hover {
+      background-color: #1e7e34;
+    }
+    @media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 1.5em;
+    padding: 15px;
+    margin-top: 0;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .btn-retour {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1em;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery img {
+    max-height: 250px;
+    object-fit: cover;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>La Danse Traditionnelle de la RDC</h1>
+  </header>
+
+  <div class="container">
+    <p>
+      La République Démocratique du Congo est riche en danses traditionnelles variées, transmises de génération en génération.
+      Chaque région, chaque peuple a ses propres rythmes, mouvements, significations et costumes.
+    </p>
+    <p>
+      Ces danses sont plus que des divertissements : elles sont des moyens d'expression culturelle, de transmission de l'histoire,
+      et d’unité communautaire. Elles s’accompagnent souvent de tambours, chants, et cérémonies.
+    </p>
+
+    <div class="gallery">
+      <img src="https://www.musicinafrica.net/sites/default/files/styles/article_slider_large/public/images/article/201412/danseusestraditionnelles01.jpg?itok=WogrxVgO" alt="Danseurs Lega">
+      <img src="https://journals.openedition.org/amerika/docannexe/image/8425/img-3-small580.jpg" alt="Danse traditionnelle congolaise">
+      <img src="https://visit-kinshasa.com/wp-content/uploads/2023/11/Cultural_performance_during_the_Democratic_Republic_of_the_Congo_National_Day_Ceremony_at_Al_Wasl_m67136.jpg" alt="Danseur Baluba">
+      <img src="https://lh6.googleusercontent.com/proxy/D023eDXQTy1Hxixyl0MuSqdZt5PePTipLAAacDOu_GfQT-7W1j7GuqnnCbWySx6RVh64yFN2mA1YaW9BI_gVFy9ActH1EThVMN1XPG7I6RSHGkTIAC7mVo4YEMtEszIP2KNRmNG6KOR_NxhQ9KPDZkfeaBaqfypRxyv0mZJj" alt="Groupe de danseurs traditionnels">
+    </div>
+
+    <a class="btn-retour" href="index.html">← Retour à l'accueil</a>
+  </div>
+
+</body>
+</html>

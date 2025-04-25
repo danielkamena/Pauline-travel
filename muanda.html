@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Découvrir Muanda</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f9ff;
+      color: #023047;
+    }
+
+    .header-title {
+      background-image: url("https://cdn.pixabay.com/photo/2015/03/17/00/20/cayenne-river-677021_960_720.jpg"); /* ton image en fond */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      font-size: 3em;
+      margin: 0;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h3 {
+      margin-top: 0;
+      color: #0077b6;
+    }
+
+    .card-content p {
+      color: #023047;
+      font-size: 0.95em;
+    }
+    .btn-retour {
+      display: inline-block;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 10px;
+      padding: 12px 25px;
+      background-color: #22d6cd;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn-retour:hover {
+      background-color: #1e7e34;
+    }
+    /* 📱 Responsive pour écran de 363px ou moins */
+@media (max-width: 363px) {
+  .header-title {
+    font-size: 2.2em;
+    padding: 40px 15px;
+  }
+
+  .container {
+    padding: 15px;
+    gap: 12px;
+  }
+
+  .card-content {
+    padding: 10px;
+  }
+
+  .card-content h3 {
+    font-size: 1.2em;
+  }
+
+  .card-content p {
+    font-size: 0.85em;
+  }
+
+  .card img {
+    height: 180px;
+  }
+}
+/* 📱 Ultra-responsive pour écran de 341px ou moins */
+@media (max-width: 341px) {
+  .header-title {
+    font-size: 1.8em;
+    padding: 30px 10px;
+  }
+
+  .container {
+    padding: 10px;
+    gap: 8px;
+  }
+
+  .card-content {
+    padding: 8px;
+  }
+
+  .card-content h3 {
+    font-size: 1.1em;
+  }
+
+  .card-content p {
+    font-size: 0.75em;
+  }
+
+  .card img {
+    height: 160px;
+  }
+}
+/* 📱 Super compact pour écran de 333px ou moins */
+@media (max-width: 333px) {
+  .header-title {
+    font-size: 1.7em;
+    padding: 25px 8px;
+  }
+
+  .container {
+    padding: 8px;
+    gap: 6px;
+  }
+
+  .card-content {
+    padding: 6px;
+  }
+
+  .card-content h3 {
+    font-size: 1em;
+  }
+
+  .card-content p {
+    font-size: 0.7em;
+  }
+
+  .card img {
+    height: 140px;
+  }
+}
+/* 📱 Ultra-compact pour écran de 328px ou moins */
+@media (max-width: 328px) {
+  .header-title {
+    font-size: 1.6em;
+    padding: 20px 6px;
+  }
+
+  .container {
+    padding: 6px;
+    gap: 4px;
+  }
+
+  .card-content {
+    padding: 5px;
+  }
+
+  .card-content h3 {
+    font-size: 0.95em;
+  }
+
+  .card-content p {
+    font-size: 0.65em;
+  }
+
+  .card img {
+    height: 130px;
+  }
+}
+/* 📱 Super mini pour écran de 324px ou moins */
+@media (max-width: 324px) {
+  .header-title {
+    font-size: 1.5em;
+    padding: 15px 5px;
+  }
+
+  .container {
+    padding: 5px;
+    gap: 3px;
+  }
+
+  .card-content {
+    padding: 4px;
+  }
+
+  .card-content h3 {
+    font-size: 0.9em;
+  }
+
+  .card-content p {
+    font-size: 0.6em;
+  }
+
+  .card img {
+    height: 120px;
+  }
+}
+/* 📱 Compact pour écran de 322px ou moins */
+@media (max-width: 322px) {
+  .header-title {
+    font-size: 1.4em;
+    padding: 10px 4px;
+  }
+
+  .container {
+    padding: 4px;
+    gap: 2px;
+  }
+
+  .card-content {
+    padding: 3px;
+  }
+
+  .card-content h3 {
+    font-size: 0.85em;
+  }
+
+  .card-content p {
+    font-size: 0.55em;
+  }
+
+  .card img {
+    height: 110px;
+  }
+}
+/* 📱 Ultra-compact pour écran de 310px ou moins */
+@media (max-width: 310px) {
+  .header-title {
+    font-size: 1.3em;
+    padding: 8px 4px;
+  }
+
+  .container {
+    padding: 3px;
+    gap: 1px;
+  }
+
+  .card-content {
+    padding: 2px;
+  }
+
+  .card-content h3 {
+    font-size: 0.8em;
+  }
+
+  .card-content p {
+    font-size: 0.5em;
+  }
+
+  .card img {
+    height: 100px;
+  }
+}
+/* 📱 Super ultra-compact pour écran de 307px ou moins */
+@media (max-width: 307px) {
+  .header-title {
+    font-size: 1.2em;
+    padding: 6px 4px;
+  }
+
+  .container {
+    padding: 2px;
+    gap: 0px;
+  }
+
+  .card-content {
+    padding: 2px;
+  }
+
+  .card-content h3 {
+    font-size: 0.75em;
+  }
+
+  .card-content p {
+    font-size: 0.45em;
+  }
+
+  .card img {
+    height: 90px; /* Redimensionnement de l'image */
+  }
+}
+/* 📱 Ultra-compact pour écran de 305px ou moins */
+@media (max-width: 305px) {
+  .header-title {
+    font-size: 1.1em;
+    padding: 5px 4px;
+  }
+
+  .container {
+    padding: 1px;
+    gap: 0px;
+  }
+
+  .card-content {
+    padding: 1px;
+  }
+
+  .card-content h3 {
+    font-size: 0.7em;
+  }
+
+  .card-content p {
+    font-size: 0.4em;
+  }
+
+  .card img {
+    height: 80px; /* Redimensionnement de l'image */
+  }
+}
+/* 📱 Ultra-compact pour écran de 300px ou moins */
+@media (max-width: 300px) {
+  .header-title {
+    font-size: 1em;
+    padding: 4px 3px;
+  }
+
+  .container {
+    padding: 0;
+    gap: 0;
+  }
+
+  .card-content {
+    padding: 0;
+  }
+
+  .card-content h3 {
+    font-size: 0.65em;
+  }
+
+  .card-content p {
+    font-size: 0.35em;
+  }
+
+  .card img {
+    height: 70px; /* Redimensionnement de l'image */
+  }
+  .card{
+    margin-top: 10px;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+
+  <h1 class="header-title">Découvrir Muanda</h1>
+
+  <div class="container">
+    <div class="card">
+      <img src="https://pbs.twimg.com/media/E0d5tnQWEAYBCfg.jpg:large" alt="Plage de Muanda">
+      <div class="card-content">
+        <h3>Plage de Muanda</h3>
+        <p>Une magnifique plage au bord de l’océan Atlantique, idéale pour se détendre, bronzer et profiter de la brise marine.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://i0.wp.com/infocongo.net/media/2024/07/parc-marin-des-mangroves-muanda3.jpg?resize=1024%2C576&ssl=1" alt="Réserve de Mangroves">
+      <div class="card-content">
+        <h3>Réserve de Mangroves</h3>
+        <p>Un écosystème unique à explorer en pirogue, abritant des oiseaux rares, des singes et une faune marine exceptionnelle.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/ce/89/68/hotel-buding.jpg?w=1200&h=-1&s=1" alt="Centre-ville de Muanda">
+      <div class="card-content">
+        <h3>Centre-ville de Muanda</h3>
+        <p>Un centre vivant où se mêlent marchés locaux, commerces et petits restaurants avec vue sur la mer.</p>
+      </div>
+    </div>
+  </div>
+  <a class="btn-retour" href="index.html">← Retour à l'accueil</a>
+
+</body>
+</html>

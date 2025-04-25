@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les Gorilles du Parc Kahuzi-Biega</title>
+  <style>
+    /* Style global */
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+      color: #000000;
+    }
+
+    /* En-tête */
+    header {
+      background-image: url('https://cdn.pixabay.com/photo/2018/02/12/07/54/primate-3147647_640.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 350px;
+      color: white;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    /* Container principal */
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #62dd29;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Section d'introduction */
+    .intro h2 {
+      color: #e67e22;
+      font-size: 2.2em;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .intro p {
+      font-size: 1.1em;
+      line-height: 1.8;
+      color: #161515;
+      text-align: justify;
+      margin-bottom: 30px;
+      padding: 0 10px;
+    }
+
+    /* Galerie d'images */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 350px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Bouton retour */
+    .btn-retour {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #1fdbe9;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 40px;
+      transition: background 0.3s;
+    }
+
+    .btn-retour:hover {
+      background-color: #1e7e34;
+    }
+
+    /* Style responsive pour petits écrans */
+    @media screen and (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+        padding: 15px;
+      }
+
+      .intro h2 {
+        font-size: 1.8em;
+      }
+
+      .gallery {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .gallery img {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- En-tête -->
+  <header>
+    <h1>Les Gorilles du Parc Kahuzi-Biega</h1>
+  </header>
+
+  <!-- Contenu principal -->
+  <div class="container">
+    <!-- Introduction -->
+    <div class="intro">
+      <h2>Les Gorilles de Kahuzi-Biega</h2>
+      <p>Le parc national de Kahuzi-Biega, situé dans l'est de la République Démocratique du Congo, est un sanctuaire pour les gorilles de plaine. Ces gorilles, que l'on trouve principalement dans la forêt tropicale du parc, sont une espèce menacée et nécessitent une protection urgente.</p>
+      
+      
+    </div>
+
+    <!-- Galerie d'images -->
+    <div class="gallery">
+      <img src="https://cdn.pixabay.com/photo/2020/06/11/12/00/gorilla-5286468_640.jpg" alt="Gorilles du parc Kahuzi-Biega">
+      <img src="https://cdn.pixabay.com/photo/2018/06/22/03/32/gorilla-3489893_1280.jpg" alt="Gorilles en forêt de Kahuzi-Biega">
+      <img src="https://cdn.pixabay.com/photo/2023/01/09/22/05/baby-gorilla-7708344_640.jpg" alt="Gorille dans le parc Kahuzi-Biega">
+    </div>
+    <p>Le parc est un patrimoine mondial de l'UNESCO, et il est reconnu pour ses efforts de conservation. Grâce aux patrouilles des rangers, des programmes de recherche et un suivi constant, les gorilles de Kahuzi-Biega ont une chance de survivre face aux menaces telles que le braconnage et la destruction de leur habitat.</p>
+
+      <p>Les visiteurs peuvent explorer le parc pour observer les gorilles dans leur habitat naturel tout en soutenant la conservation de cette espèce iconique.</p>
+
+    <!-- Bouton retour -->
+    <a href="index.html" class="btn-retour">← Retour à l'accueil</a>
+  </div>
+
+</body>
+</html>
