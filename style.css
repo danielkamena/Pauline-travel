@@ -153,6 +153,31 @@ nav b{
     
     
   }
+  .slick-prev,
+  .slick-next {
+    
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5); /* fond semi-transparent */
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  /* Coller à l'intérieur de l'image */
+  .slick-prev {
+    left: 10px;
+  }
+  
+  .slick-next {
+    right: 10px;
+  }
   
   .carousel img {
     width: 100%;
